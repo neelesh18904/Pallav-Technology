@@ -1,0 +1,13 @@
+.uploader {
+  border: 2px dashed #888;
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  color: #444;
+  background: #fafafa;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.uploader:hover {
+  background: #f0f0f0;
+} 

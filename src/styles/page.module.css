@@ -1,0 +1,53 @@
+.main {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.main h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #222;
+  letter-spacing: 1px;
+}
+.processBtn {
+  margin: 20px 0 0 0;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.processBtn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+.error {
+  color: #d32f2f;
+  margin-top: 12px;
+  font-weight: bold;
+} 
+
+.loading {
+  color: #0070f3;
+  margin-top: 12px;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+} 
