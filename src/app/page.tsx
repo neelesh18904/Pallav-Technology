@@ -3,18 +3,15 @@ import React, { useState } from "react";
 import AudioUploader from "../components/AudioUploader";
 import AudioPlayer from "../components/AudioPlayer";
 import FeedbackDisplay from "../components/FeedbackDisplay";
-import { Feedback } from "../types/feedback";
 import styles from "../styles/page.module.css";
 
 const HomePage: React.FC = () => {
-  const [audioFile, setAudioFile] = useState<File | null>(null);
   const [audioUrl, setAudioUrl] = useState<string>("");
-  const [feedback, setFeedback] = useState<Feedback | null>(null);
+  const [feedback, setFeedback] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
   const handleFileSelect = async (file: File) => {
-    setAudioFile(file);
     setAudioUrl(URL.createObjectURL(file));
     setFeedback(null);
     setError("");
