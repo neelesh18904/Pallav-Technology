@@ -1,8 +1,6 @@
 "use client";
 import React, { useRef } from 'react';
 import styles from '../styles/AudioUploader.module.css';
-import FormData from 'form-data';
-import { NextRequest, NextResponse } from 'next/server';
 
 interface AudioUploaderProps {
   onFileSelect: (file: File) => void;
